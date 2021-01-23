@@ -1,0 +1,77 @@
+.color-blue {
+    color: blue;
+}
+
+.main-heading {
+    color: red;
+}
+
+.main-heading.color-blue {
+    color: yellowgreen;
+}
+
+.blue-class-container > .color-blue {
+    color: #477774;
+}
+
+/* h4 {
+    color: blue;
+} */
+
+#example-id {
+    color: orangered;
+}
+
+* {
+    color: #DB4117;
+}
+
+p.color-yellow {
+    color: yellow;
+}
+
+.main-text, .secondary-text {
+    font-size: 24px;
+}
+
+/* selects all h3 elements placed inside a div element */
+/* div h3 {
+} */
+
+.testing-next-element + h2 {
+    color: red;
+}
+
+h2[my-attr^="test"] {
+    color: orange;
+}
+
+/* Selectivity testing (id, class, element) */
+#main-container .subcontainer-element button {
+    background: red;
+}
+/* (1, 1, 1) */
+
+.main-container-element #submit-button {
+    background: #477774;
+}
+/* (1, 1, 0) */
+
+div .subcontainer-element .button--main {
+    background: #DB4117;
+}
+/* (0, 2, 1) */
+
+.main-container-element button#submit-button {
+    background: yellowgreen;
+}
+/* (1, 1, 1) */
+
+body {
+    background: black;
+}
+
+.color-testing {
+    /* color: rgba(0, 255, 0, 1); */
+    color: #ffff00;
+}
